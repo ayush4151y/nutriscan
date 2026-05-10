@@ -35,6 +35,7 @@ The app provides:
 - Personalized warnings
 - Healthier alternatives
 - Interactive ingredient explanations
+- Telegram-based feedback system
 
 NutriScan is designed with a modern mobile-friendly UI and works as a Progressive Web App (PWA).
 
@@ -55,6 +56,11 @@ Powered by Gemini AI to provide:
 - Personalized warnings
 - Overall product health rating
 - Suggested healthier alternatives
+
+### 📬 Telegram Feedback Integration
+- User feedback sent directly through Telegram Bot API
+- Real-time feedback notifications
+- Lightweight and simple backend integration
 
 ### 📱 PWA Support
 - Installable on desktop and mobile
@@ -80,6 +86,7 @@ Built using:
 | Tailwind CSS | Styling |
 | ShadCN UI | UI Components |
 | ZXing | Barcode Scanning |
+| Telegram Bot API | Feedback System |
 | next-pwa | Progressive Web App |
 
 ---
@@ -123,9 +130,11 @@ Create a `.env` file in the root directory:
 
 ```env
 GEMINI_API_KEY=YOUR_API_KEY_HERE
+TELEGRAM_BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
+TELEGRAM_CHAT_ID=YOUR_CHAT_ID
 ```
 
-Get your API key from:
+Get your Gemini API key from:
 https://aistudio.google.com/app/apikey
 
 ### 4. Run Development Server
@@ -163,6 +172,7 @@ Main workflow:
 2. AI extracts and analyzes ingredient data
 3. Gemini generates health insights
 4. Results are displayed interactively
+5. User feedback can be forwarded using Telegram Bot integration
 
 ---
 
