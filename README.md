@@ -1,5 +1,11 @@
 # NutriScan AI
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge)](https://nutriscan-tan.vercel.app)
+
+## 🌐 Live Demo
+
+[Open NutriScan AI](https://nutriscan-tan.vercel.app)
+
 NutriScan AI is a web application built with Next.js that allows users to analyze the health impact of food products. Users can scan ingredient lists from images, scan product barcodes, or enter ingredients manually to get an instant analysis, a health rating, personalized warnings, and suggestions for healthier alternatives.
 
 ## ✨ Key Features
@@ -80,7 +86,7 @@ Follow these steps to set up and run the project locally.
 Clone the repository and install the dependencies:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/ayush4151y/nutriscan.git
 cd <project-directory>
 npm install
 ```
