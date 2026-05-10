@@ -151,6 +151,34 @@ http://localhost:9002
 
 ---
 
+## 🔐 Recommended .gitignore
+
+```gitignore
+.env
+.next
+node_modules
+.modified
+```
+
+This helps prevent accidental exposure of sensitive files and unnecessary build outputs.
+
+---
+
+## 🗺️ Features Roadmap
+
+- [x] Barcode Scanning
+- [x] Image Ingredient Analysis
+- [x] AI Health Recommendations
+- [x] PWA Support
+- [x] Telegram Feedback System
+- [ ] Multi-language Support
+- [ ] User Accounts
+- [ ] Nutrition Tracking
+- [ ] Product Comparison System
+- [ ] Personalized Diet Suggestions
+
+---
+
 ## 📱 Install as App (PWA)
 
 ### Android
@@ -173,6 +201,24 @@ Main workflow:
 3. Gemini generates health insights
 4. Results are displayed interactively
 5. User feedback can be forwarded using Telegram Bot integration
+
+---
+
+## ⚠️ Disclaimer
+
+NutriScan provides AI-generated nutritional insights and should not replace professional medical advice.
+
+Always consult a qualified healthcare professional for dietary or medical concerns.
+
+---
+
+## 🎯 Who Is This For?
+
+- Fitness enthusiasts
+- Health-conscious users
+- Parents checking packaged foods
+- Students learning about nutrition
+- Everyday consumers making smarter food choices
 
 ---
 
