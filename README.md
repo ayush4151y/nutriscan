@@ -189,7 +189,11 @@ Main workflow:
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is shared for educational and portfolio purposes only.
+
+You may view and learn from the source code, but you may not copy, modify, redistribute, or use this project commercially without permission.
+
+See the LICENSE file for more details.
 
 ---
 
