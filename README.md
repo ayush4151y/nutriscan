@@ -25,7 +25,6 @@ NutriScan AI is an AI-powered packaged food analyzer built with Next.js and Goog
 
 Users can:
 - Scan food ingredient lists from images
-- Scan product barcodes
 - Paste ingredients manually
 - Get AI-powered health analysis instantly
 
@@ -47,7 +46,6 @@ NutriScan is designed with a modern mobile-friendly UI and works as a Progressiv
 Analyze food products by:
 - Uploading ingredient images
 - Using the camera directly
-- Scanning product barcodes
 - Typing ingredients manually
 
 ### 🤖 AI-Powered Analysis
@@ -85,7 +83,6 @@ Built using:
 | Genkit | AI Workflow Engine |
 | Tailwind CSS | Styling |
 | ShadCN UI | UI Components |
-| ZXing | Barcode Scanning |
 | Telegram Bot API | Feedback System |
 | next-pwa | Progressive Web App |
 
@@ -166,11 +163,11 @@ This helps prevent accidental exposure of sensitive files and unnecessary build 
 
 ## 🗺️ Features Roadmap
 
-- [x] Barcode Scanning
 - [x] Image Ingredient Analysis
 - [x] AI Health Recommendations
 - [x] PWA Support
 - [x] Telegram Feedback System
+- [ ] Barcode Scanner
 - [ ] Multi-language Support
 - [ ] User Accounts
 - [ ] Nutrition Tracking
@@ -196,8 +193,8 @@ This helps prevent accidental exposure of sensitive files and unnecessary build 
 NutriScan uses Genkit AI flows with Gemini models.
 
 Main workflow:
-1. User uploads/scans ingredients
-2. AI extracts and analyzes ingredient data
+1. User uploads ingredient data
+2. AI extracts and analyzes ingredient information
 3. Gemini generates health insights
 4. Results are displayed interactively
 5. User feedback can be forwarded using Telegram Bot integration
@@ -219,17 +216,6 @@ Always consult a qualified healthcare professional for dietary or medical concer
 - Parents checking packaged foods
 - Students learning about nutrition
 - Everyday consumers making smarter food choices
-
----
-
-## 🔮 Future Improvements
-
-- Multi-language support
-- Indian regional food database
-- Better barcode database
-- Nutrition history tracking
-- AI meal recommendations
-- User accounts & sync
 
 ---
 
