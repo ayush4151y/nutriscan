@@ -161,21 +161,6 @@ This helps prevent accidental exposure of sensitive files and unnecessary build 
 
 ---
 
-## 🗺️ Features Roadmap
-
-- [x] Image Ingredient Analysis
-- [x] AI Health Recommendations
-- [x] PWA Support
-- [x] Telegram Feedback System
-- [ ] Barcode Scanner
-- [ ] Multi-language Support
-- [ ] User Accounts
-- [ ] Nutrition Tracking
-- [ ] Product Comparison System
-- [ ] Personalized Diet Suggestions
-
----
-
 ## 📱 Install as App (PWA)
 
 ### Android
