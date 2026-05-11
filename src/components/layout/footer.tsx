@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Github } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -12,7 +13,18 @@ export function Footer() {
             Privacy Policy
           </Link>
         </div>
-        <p>Disclaimer: AI analysis is for informational purposes only.</p>
+        <div className="flex flex-col items-center gap-2 sm:items-end">
+          <p>Disclaimer: AI analysis is for informational purposes only.</p>
+          <Link
+            href="https://github.com/ayush4151y"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 hover:text-foreground"
+          >
+            <Github className="h-4 w-4" />
+            <span>Created by Ayush with ❤️ · @ayush4151y</span>
+          </Link>
+        </div>
       </div>
     </footer>
   );
