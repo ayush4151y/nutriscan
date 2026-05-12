@@ -7,17 +7,18 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
       {...props}
     >
       <defs>
-        <linearGradient id="nutriscan-ring" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+        <linearGradient id="ns-ring" x1="7" y1="9" x2="55" y2="55" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#ffffff" />
-          <stop offset="0.52" stopColor="#f8fff9" />
+          <stop offset="0.58" stopColor="#ffffff" />
+          <stop offset="1" stopColor="#7cff3d" />
+        </linearGradient>
+        <linearGradient id="ns-leaf" x1="17" y1="47" x2="43" y2="27" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#b7ff68" />
+          <stop offset="0.5" stopColor="#66f13f" />
           <stop offset="1" stopColor="hsl(var(--primary))" />
         </linearGradient>
-        <linearGradient id="nutriscan-leaf" x1="18" y1="42" x2="42" y2="20" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor="#7cff3d" />
-          <stop offset="1" stopColor="hsl(var(--primary))" />
-        </linearGradient>
-        <filter id="nutriscan-glow" x="-30%" y="-30%" width="160%" height="160%">
-          <feGaussianBlur stdDeviation="2.2" result="blur" />
+        <filter id="ns-glow" x="-35%" y="-35%" width="170%" height="170%">
+          <feGaussianBlur stdDeviation="1.8" result="blur" />
           <feMerge>
             <feMergeNode in="blur" />
             <feMergeNode in="SourceGraphic" />
@@ -25,50 +26,50 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
         </filter>
       </defs>
 
-      <circle cx="32" cy="32" r="29" fill="hsl(var(--background))" />
+      <circle cx="32" cy="32" r="30" fill="#070b08" />
 
       <path
-        d="M52.5 16.5A27 27 0 1 0 51.1 49"
-        stroke="url(#nutriscan-ring)"
-        strokeWidth="7"
+        d="M50.7 14.7A26.2 26.2 0 1 0 50 49.9"
+        stroke="url(#ns-ring)"
+        strokeWidth="7.4"
         strokeLinecap="round"
       />
       <path
-        d="M51.1 49A27 27 0 0 0 57.3 35"
+        d="M50 49.9A26.2 26.2 0 0 0 56.9 34.4"
         stroke="hsl(var(--primary))"
-        strokeWidth="7"
+        strokeWidth="7.4"
         strokeLinecap="round"
-        filter="url(#nutriscan-glow)"
+        filter="url(#ns-glow)"
       />
 
       <path
-        d="M16.8 43.6c10.4 1.3 20.6-3.8 25.3-13.5-8.7-.2-18.2 3.8-25.3 13.5Z"
-        fill="url(#nutriscan-leaf)"
+        d="M14.8 43.7C24.5 47 37.6 43.4 45.8 29.7C33.7 27.8 21.5 32.9 14.8 43.7Z"
+        fill="url(#ns-leaf)"
+        filter="url(#ns-glow)"
       />
       <path
-        d="M18 43.2c6.1-3.2 12.2-5.5 20.1-6.1"
-        stroke="hsl(var(--background))"
-        strokeWidth="2.4"
+        d="M18.2 42.9C26.1 38.7 32.9 36.7 42.2 36.4"
+        stroke="#071008"
+        strokeWidth="2.6"
         strokeLinecap="round"
-        opacity="0.9"
+        opacity="0.85"
       />
 
-      <path
-        d="M21 21h7M21 21v7M43 21h-7M43 21v7M21 43h7M21 43v-7M43 43h-7M43 43v-7"
-        stroke="hsl(var(--primary))"
-        strokeWidth="3"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        filter="url(#nutriscan-glow)"
-      />
-
-      <path
-        d="M49 25h7M49 32h9M49 39h6"
-        stroke="hsl(var(--primary))"
-        strokeWidth="3.5"
-        strokeLinecap="round"
-        opacity="0.95"
-      />
+      <g filter="url(#ns-glow)">
+        <path
+          d="M22 20h6M22 20v6M42 20h-6M42 20v6M22 42h6M22 42v-6M42 42h-6M42 42v-6"
+          stroke="hsl(var(--primary))"
+          strokeWidth="3.1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M48.5 25.5h6.5M48.5 32h8M48.5 38.5h5.5"
+          stroke="#a8ff73"
+          strokeWidth="3.2"
+          strokeLinecap="round"
+        />
+      </g>
     </svg>
   );
 }
